@@ -1,316 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>EcoMart | Ecommerce Website Design</title>
-    <link rel="stylesheet" href="style1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my website.">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo2.jpg" width="125px">
-            </div>
-            <nav>
-              <ul id = "MenuItems">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Account</a></li>
-              </ul>
-            </nav>
-            <img src="images/cart.png" width="30px" height="30px">
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo2.jpg" width="125px">
         </div>
+      <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <div class="row">
-        <div class="col-2">
-            <h1>Give Your Workout<br>A New Style!</h1>
-            <p>Elevate your fitness routine with a touch of style. Ditch the monotonous gym<br> sessions and infuse your workouts with a fresh, fashionable flair.</p>
-            <a href="" class="btn">Explore Now &#8594;</a>
-        </div>
-        <div class="col-2">
-            <img src="images/image1.png">
-        </div>
-    </div>
-    </div>
-<!------------ featured categories ---------->
-    <div class="categories">
-        <h2 class="title">Featured Categories</h2>
-        <div class="small-containers">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg">
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-<!------------ featured prooducts ---------->
-    <div class="small-containers">
-        <h2 class="title">Featured Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/product-1.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-2.jpg">
-                <h4>Black Sport Shoes</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$200.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-3.jpg">
-                <h4>Dark Grey Trouser</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$150.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-4.jpg">
-                <h4>Dark Blue Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$75.00</p>
-            </div>
-        </div>
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/product-9.jpg">
-                <h4>Men's Watches</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$580.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-10.jpg">
-                <h4>Sport Shoes</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$300.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-11.jpg">
-                <h4>Running Shoes</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$175.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-12.jpg">
-                <h4>Black Printed Trouser</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$45.00</p>
-            </div>
-        </div>
-    </div>
-<!---------offer--------->
-    <div class="offer">
-        <h2 class="title">Offers</h2>
-        <div class="small-containers">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/exclusive.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on EcoMart</p>
-                    <h1>Smart Band 4</h1>
-                    <small>The Mini Smart Band is a compact and versatile wearable device designed to seamlessly integrate with your active lifestyle. Measuring just 1.5 inches in width and weighing only 0.5 ounces, the Mini Smart Band is incredibly lightweight and discreet, allowing you to wear it comfortably all day without any bulkiness or distraction. </small>
-                    <a href="" class="btn">Buy Now &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-<!---------testimonial--------->
-    <div class="testimonial">
-        <div class="small-containers">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>The seamless tracking and intuitive features have helped me stay motivated and on top of my wellness goals. The compact design makes it so easy to wear all day without even noticing it's there. I highly recommend the Mini Smart Band to anyone looking to take their self-care to the next level.</p>
-                </div>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <img src="images/user-x.jpg" height="250px" width="250px">
-                <h3>Max Delegate</h3>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>The seamless tracking and intuitive features have helped me stay motivated and on top of my wellness goals. The compact design makes it so easy to wear all day without even noticing it's there. I highly recommend the Mini Smart Band to anyone looking to take their self-care to the next level.</p>
-                </div>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <img src="images/user-1.png">
-                <h3>Sean Michealson</h3>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>The seamless tracking and intuitive features have helped me stay motivated and on top of my wellness goals. The compact design makes it so easy to wear all day without even noticing it's there. I highly recommend the Mini Smart Band to anyone looking to take their self-care to the next level.</p>
-                </div>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <img src="images/user-2.png">
-                <h3>Karl Lipa</h3>
-            </div>
-        </div>
-    </div>
-    <!------------brands----------->
-    <div class="brands">
-        <div class="small-containers">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-godrej.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-oppo.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-coca-cola.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-paypal.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo2.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-----------------footer---------------->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/logo2.jpg">
-                    <p>Our purpose is to provide a streamlined and eco-friendly shopping experience for users who are looking to make more sustainable purchasing decisions.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li><a href="#">Coupons</a></li>
-                        <li><a href="#">Blog Post</a></li>
-                        <li><a href="#">Return Policy</a></li>
-                        <li><a href="#">Join Affiliate</a></li>
-                    </ul>
-                    <div class="footer-col-4">
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">YouTube</a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-            <p class="copyright">Copyright 2024 - EcoMart Ecommerce Project</p>
-    </div>
-<!-----------js fo toggle menu----------->
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "200px";
-                }
-            else
-                {
-                    MenuItems.style.maxHeight = "0px"
-                }
-        }
-    </script>
-        
-
+    <main>
+      <section>
+        <h2>About Us</h2>
+        <p>This is where we provide information about our company.</p>
+      </section>
+      <section>
+        <h2>Our Services</h2>
+        <p>This is where we list our services.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>
