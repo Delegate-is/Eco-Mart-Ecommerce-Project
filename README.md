@@ -9,12 +9,14 @@ Nairobi, Kenya
 
 Overview
 EcoMart is an e-commerce application that aims to provide a streamlined and eco-friendly shopping experience for users looking to make more sustainable purchasing decisions. EcoMart empowers consumers to reduce their carbon footprint and supports businesses that prioritize sustainability by curating a selection of environmentally-conscious products from ethical and sustainable brands.
+
 Goals/ Learning Objectives
 Develop a user-friendly and visually appealing e-commerce platform that seamlessly integrates sustainable product selection and educational content.
 Implement robust back-end infrastructure to handle product cataloging, user authentication, order processing, and inventory management.
 Integrate third-party services for payment processing, shipping, and data analytics to enhance the overall user experience.
 Establish effective marketing and customer engagement strategies to promote the EcoMart brand and attract environmentally-conscious consumers.
 Continuously gather user feedback and iterate on the MVP to improve functionality, address challenges, and enhance the platform's sustainability-focused offerings.
+
 Technologies Used
 Libraries, Languages, and Frameworks:
 Front-end: HTML, CSS, JavaScript
