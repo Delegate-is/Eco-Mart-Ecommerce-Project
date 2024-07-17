@@ -29,23 +29,27 @@ Third-party Services:
 Stripe for secure payment processing
 FedEx or UPS API for shipping integration
 Google Analytics for user behavior tracking and data analysis
+
 Design Tools: 
 Adobe XD or Figma for UI/UX design
 Version Control: 
 Git and GitHub for collaborative development and version management
 Let's now examine two technology solutions, their alternatives, the trade-offs, and the decision-making process:
+
 Frontend Framework: React vs. Angular
 Trade-offs:
 React: It is renowned for its simplicity, component reuse, and sizable developer community. For sophisticated functionality, it can need extra libraries, and the learning curve for beginners might be challenging.
 Angular: Provides a more complete framework that includes capabilities for forms, routing, and animations built right in. For large-scale applications, it offers superior support. Although the file size is typically higher than React, it could be more complicated for smaller projects.
 Decision:
 Considering Eco-Mart is a medium-sized project with a team of skilled developers, we choose React as it provides a good balance between simplicity and flexibility. The team has experience with React, and its component-based architecture will allow for easier maintenance and scalability of the application. Regarding the backend, Django was preferred for its robustness, security features, and active community support.
+
 Challenges Identified:
 Ensuring comprehensive vetting and verification of the sustainability credentials of all featured brands and products.
 Developing effective marketing strategies to reach and engage the target audience of eco-conscious consumers.
 Integrating seamless payment and shipping options while maintaining a focus on sustainability.
 Scalability and performance optimization as the user base and product catalog expand.
 Continuously gathering and incorporating user feedback to improve the platform and address evolving customer needs.
+
 Timeline
 Project Planning and Team Onboarding (3 days)
 Front-end Development (10 days)
@@ -53,6 +57,7 @@ Back-end Development (12 days)
 Integration of Third-party Services (5 days)
 User Testing and Feedback Incorporation (5 days)
 Final Polishing and Deployment (2 days)
+
 Mock-ups:
 (Showcasing the wireframes and design concepts for the EcoMart MVP)
  Risks
@@ -67,6 +72,7 @@ Infrastructure
 • Deployment: AWS Elastic Beanstalk will be used to launch and scale the app automatically.
 • Data Population: Using a user-friendly seller dashboard, sellers may register and fill up the data for their products.
 • Testing: For unit and integration tests, we'll use automated testing with Django's built-in test framework.
+
 Current Solutions
 • Though they provide a vast choice of products, existing online marketplaces like Jumia, TACIT market and Kilimall might not have a dedicated sustainability section.
 • Although they may offer a small variety of products, niche sustainable marketplaces like Ecopost and Greenspoon concentrate on eco-friendly goods.
