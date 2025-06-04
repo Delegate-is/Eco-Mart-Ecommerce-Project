@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arial Logistics - Your Trusted Logistics Partner in Kenya</title>
+    <link rel="icon" href="[Path to your favicon.ico]" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset & Typography */
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            scroll-behavior: smooth; /* For smooth scrolling to sections */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+
+        p { margin-bottom: 1em; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Navigation (Simple for Landing Page) */
+        header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center; /* Center align for simple logo/name */
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #007bff; /* Primary brand color */
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('[Path to your high-quality hero image]'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 500px; /* Adjust as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            color: #f0f0f0;
+            max-width: 800px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff; /* Primary brand color */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .trust-signal {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        /* Sections Styling */
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section:nth-of-type(odd) {
+            background-color: #f0f4f8; /* Light background for alternating sections */
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            font-size: 2.2em;
+        }
+
+        /* Problem/Solution & Differentiators */
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .usp-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .usp-item h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .service-item img {
+            width: 80px; /* Adjust icon size */
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials Section */
+        .testimonials-slider {
+            /* For simplicity, a static display here.
+               For actual slider functionality, you'd need JavaScript/Swiper.js */
+            display: flex;
+            overflow-x: auto; /* Allows horizontal scrolling if many */
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 20px; /* Space for scrollbar */
+            justify-content: center; /* Center items if few */
+        }
+
+        .testimonial-card {
+            flex: 0 0 400px; /* Fixed width, adjust as needed */
+            background-color: #fff;
+            padding: 30px;
+            margin: 0 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            scroll-snap-align: center;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        /* Client Logos */
+        .client-logos {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .client-logo img {
+            max-height: 60px; /* Adjust size */
+            filter: grayscale(100%); /* Optional: for consistent look */
+            opacity: 0.7;
+            transition: opacity 0.3s ease, filter 0.3s ease;
+        }
+
+        .client-logo img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        /* Lead Capture Form */
+        .contact-form-section {
+            background-color: #2c3e50; /* Dark background */
+            color: #fff;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form select,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .privacy-note {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer .contact-info p {
+            margin: 5px 0;
+        }
+
+        footer .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-links a:hover {
+            color: #007bff;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .hero h2 { font-size: 1.3em; }
+
+            .usp-grid, .services-grid {
+                grid-template-columns: 1fr; /* Stack columns on small screens */
+            }
+
+            .testimonial-card {
+                flex: 0 0 90%; /* Make cards wider on small screens */
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form input[type="tel"],
+            .contact-form select,
+            .contact-form textarea {
+                width: calc(100% - 20px); /* Adjust for padding */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Arial Logistics</a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Seamless Logistics Solutions for Your Business Growth.</h1>
+            <h2>From Freight to Fulfillment, Experience Unmatched Efficiency & Security Across Kenya & Beyond.</h2>
+            <a href="#quote-form" class="cta-button">Get a Free Quote Now</a>
+            <p class="trust-signal">Trusted by 500+ Businesses | Licensed & Insured</p>
+        </div>
+    </section>
+
+    <section class="problem-solution">
+        <div class="container">
+            <h2 class="section-title">Why Choose Arial Logistics?</h2>
+            <p>Frustrated with logistics complexities and unreliable deliveries? We understand. Arial Logistics is built to simplify your supply chain and empower your business with reliable, secure, and transparent solutions.</p>
+
+            <div class="usp-grid">
+                <div class="usp-item">
+                    <h3>Reliability You Can Count On</h3>
+                    <p>We ensure your goods arrive on time, every time, minimizing disruptions and maximizing your operational efficiency.</p>
+                </div>
+                <div class="usp-item">
+                    <h3>Transparent & Real-time Tracking</h3>
+                    <p>Stay informed with our advanced tracking systems and clear, upfront pricing. No hidden fees, no surprises.</p>
+                </div>
+                <div class="usp-item">
+                    <h3>Expert Team & Local Knowledge</h3>
+                    <p>Benefit from our seasoned logistics professionals who understand the Kenyan market and international regulations.</p>
+                </div>
+                <div class="usp-item">
+                    <h3>Secure Warehousing & Cargo Protection</h3>
+                    <p>Your valuable assets are safe in our state-of-the-art facilities, backed by robust security protocols and insurance.</p>
+                </div>
+                 <div class="usp-item">
+                    <h3>Tailored Solutions</h3>
+                    <p>Every business is unique. We offer customized logistics plans that perfectly fit your specific needs and budget.</p>
+                </div>
+                 <div class="usp-item">
+                    <h3>Customer-Centric Approach</h3>
+                    <p>Our dedicated account managers provide personalized support, ensuring a smooth and hassle-free experience from start to finish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services">
+        <div class="container">
+            <h2 class="section-title">Our Comprehensive Logistics Services</h2>
+            <p>From the first mile to the last, Arial Logistics covers all your supply chain needs.</p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="[Path to Freight Icon]" alt="Freight Forwarding Icon">
+                    <h3>Freight Forwarding (Air, Sea, Road)</h3>
+                    <p>Seamless movement of goods globally and locally. We handle all documentation and coordination.</p>
+                </div>
+                <div class="service-item">
+                    <img src="[Path to Warehouse Icon]" alt="Warehousing Icon">
+                    <h3>Warehousing & Storage</h3>
+                    <p>Secure, modern facilities for short-term and long-term storage, inventory management, and distribution.</p>
+                </div>
+                <div class="service-item">
+                    <img src="[Path to Delivery Icon]" alt="Last-Mile Delivery Icon">
+                    <h3>Last-Mile Delivery</h3>
+                    <p>Efficient and timely delivery directly to your customers' doorsteps, enhancing their experience.</p>
+                </div>
+                <div class="service-item">
+                    <img src="[Path to Customs Icon]" alt="Customs Brokerage Icon">
+                    <h3>Customs Brokerage</h3>
+                    <p>Navigate complex customs regulations with ease. Our experts ensure smooth import/export processes.</p>
+                </div>
+                <div class="service-item">
+                    <img src="[Path to E-commerce Icon]" alt="E-commerce Fulfillment Icon">
+                    <h3>E-commerce Fulfillment</h3>
+                    <p>Integrated pick, pack, and ship solutions for online businesses to scale effortlessly.</p>
+                </div>
+                <div class="service-item">
+                    <img src="[Path to Special Cargo Icon]" alt="Specialized Transport Icon">
+                    <h3>Specialized Transport</h3>
+                    <p>Handling unique cargo like perishables, oversized goods, or hazardous materials with specialized care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p>"Arial Logistics has been a game-changer for our business. Their efficiency and commitment to timely delivery are exceptional. Highly recommend!"</p>
+                    <div class="author">- Jane Wanjiku, Operations Manager, Tech Solutions Ltd.</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"We've seen a significant reduction in our logistics costs since partnering with Arial. Their transparent pricing and excellent service are a huge plus."</p>
+                    <div class="author">- David Kimani, Founder, Kenya Retail Co.</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Navigating customs used to be a nightmare. Arial Logistics made it seamless and stress-free. True experts in their field!"</p>
+                    <div class="author">- Emily Mwangi, Import/Export Coordinator, Global Traders PLC</div>
+                </div>
+                </div>
+            <div class="client-logos">
+                <div class="client-logo"><img src="[Path to Client Logo 1]" alt="Client 1 Logo"></div>
+                <div class="client-logo"><img src="[Path to Client Logo 2]" alt="Client 2 Logo"></div>
+                <div class="client-logo"><img src="[Path to Client Logo 3]" alt="Client 3 Logo"></div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section" id="quote-form">
+        <div class="container">
+            <h2 class="section-title" style="color: #fff;">Get Your Custom Logistics Quote</h2>
+            <p style="color: #eee;">Tell us about your logistics needs, and our experts will get back to you with a tailored solution.</p>
+
+            <form class="contact-form" action="[Your Form Submission URL]" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+
+                <label for="company">Company Name (Optional):</label>
+                <input type="text" id="company" name="company" placeholder="ABC Corporation">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+254 7XX XXX XXX">
+
+                <label for="service">Type of Service Needed:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select Service --</option>
+                    <option value="freight">Freight Forwarding</option>
+                    <option value="warehousing">Warehousing & Storage</option>
+                    <option value="last-mile">Last-Mile Delivery</option>
+                    <option value="customs">Customs Brokerage</option>
+                    <option value="ecommerce">E-commerce Fulfillment</option>
+                    <option value="specialized">Specialized Transport</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message/Details:</label>
+                <textarea id="message" name="message" placeholder="Briefly describe your logistics requirements..."></textarea>
+
+                <button type="submit">Submit Request</button>
+                <p class="privacy-note">Your information is safe with us. We respect your privacy.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><strong>Arial Logistics</strong></p>
+                <p>Phone: <a href="tel:+2547XXXXXXXX" style="color: #fff;">+254 7XX XXX XXX</a></p>
+                <p>Email: <a href="mailto:info@ariallogistics.co.ke" style="color: #fff;">info@ariallogistics.co.ke</a></p>
+                <p>Location: [Your Physical Address in Kenya]</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; <span id="current-year"></span> Arial Logistics. All rights reserved.</p>
+                <a href="[Link to your Privacy Policy]">Privacy Policy</a> |
+                <a href="[Link to your Terms of Service]">Terms of Service</a>
+            </div>
+            </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links (like "Get a Free Quote Now" to the form)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic form validation (client-side) - HTML5 'required' helps a lot already
+        const contactForm = document.querySelector('.contact-form');
+        contactForm.addEventListener('submit', function(event) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+
+            if (!name || !email || !phone || !service) {
+                alert('Please fill in all required fields.');
+                event.preventDefault(); // Stop form submission
+            }
+            // You might add more complex email/phone regex validation here if needed
+        });
+
+        // IMPORTANT: For the form to actually send data, you need a server-side script
+        // or a form service (e.g., Formspree, Netlify Forms, Google Forms integration)
+        // Set the `action` attribute of the form to your submission endpoint.
+        // Example: action="https://formspree.io/f/yourformid"
+    </script>
+
+</body>
+</html>
